@@ -9,4 +9,5 @@
     <string name="user_agreement">Пользовательское соглашение</string>
     <string name="title_activity_media_library">MediaLibraryActivity</string>
     <string name="title_activity_search">SearchActivity</string>
+
 </resources>

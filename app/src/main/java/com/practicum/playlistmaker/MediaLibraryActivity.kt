@@ -1,4 +1,4 @@
-package com.practicum.androidiscool
+package com.practicum.playlistmaker
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

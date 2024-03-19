@@ -14,7 +14,7 @@
         tools:ignore="ExtraText"
         android:paddingTop="4dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/back"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -27,6 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:layout_marginLeft="52dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:text="@string/settings"
             android:layout_gravity="start"
             android:textColor="@color/black"
@@ -49,17 +50,19 @@
 
         <Switch
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/settings_button_height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:paddingStart="16dp"
             android:textSize="@dimen/settings_text_size"
             android:id="@+id/switcher"
             android:text="@string/dark_theme" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/settings_button_height"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:backgroundTint="@color/white"
-            android:paddingStart="16dp"
+            android:paddingStart="@dimen/settings_button_padding"
             android:text="@string/share"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -70,10 +73,11 @@
             app:iconGravity="end"
             app:iconTint="@color/settings_icon" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:paddingStart="16dp"
+            android:layout_height="@dimen/settings_button_height"
+            android:paddingStart="@dimen/settings_button_padding"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:backgroundTint="@color/white"
             android:text="@string/support"
             android:textAlignment="textStart"
@@ -85,10 +89,11 @@
             app:iconGravity="end"
             app:iconTint="@color/settings_icon" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:paddingStart="16dp"
+            android:layout_height="@dimen/settings_button_height"
+            android:paddingStart="@dimen/settings_button_padding"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:backgroundTint="@color/white"
             android:text="@string/user_agreement"
             android:textAlignment="textStart"
