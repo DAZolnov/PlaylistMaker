@@ -12,12 +12,12 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:ignore="ExtraText"
-        android:paddingTop="4dp">
+        android:paddingTop="@dimen/_4dp">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/back"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/_48dp"
+            android:layout_height="@dimen/_48dp"
             android:background="@android:color/transparent"
             app:icon="@drawable/arrow_back"
             app:iconTint="@color/black"
@@ -25,15 +25,15 @@
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_marginLeft="52dp"
+            android:layout_height="@dimen/_48dp"
+            android:layout_marginLeft="@dimen/_52dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:text="@string/settings"
             android:layout_gravity="start"
             android:textColor="@color/black"
             android:textSize="@dimen/primary_text_size"
-            android:paddingTop="10dp"
-            android:paddingStart="12dp"/>
+            android:paddingTop="@dimen/_10dp"
+            android:paddingStart="@dimen/_12dp"/>
 
     </FrameLayout>
 
@@ -41,28 +41,28 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-
+        android:layout_marginTop="@dimen/_24dp"
         android:orientation="vertical"
         android:layout_weight="1"
         tools:ignore="UseSwitchCompatOrMaterialXml">
 
 
         <Switch
+            android:id="@+id/switcher"
             android:layout_width="match_parent"
             android:layout_height="@dimen/settings_button_height"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:paddingStart="16dp"
+            android:paddingStart="@dimen/_16dp"
             android:textSize="@dimen/settings_text_size"
-            android:id="@+id/switcher"
+            android:textColor="@color/black"
             android:text="@string/dark_theme" />
 
         <com.google.android.material.button.MaterialButton
+            android:background="@android:color/transparent"
             android:layout_width="match_parent"
             android:layout_height="@dimen/settings_button_height"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:backgroundTint="@color/white"
-            android:paddingStart="@dimen/settings_button_padding"
+            android:paddingStart="@dimen/_16dp"
             android:text="@string/share"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -76,9 +76,9 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="@dimen/settings_button_height"
-            android:paddingStart="@dimen/settings_button_padding"
+            android:paddingStart="@dimen/_16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:backgroundTint="@color/white"
+            android:background="@android:color/transparent"
             android:text="@string/support"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -92,9 +92,9 @@
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="@dimen/settings_button_height"
-            android:paddingStart="@dimen/settings_button_padding"
+            android:paddingStart="@dimen/_16dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:backgroundTint="@color/white"
+            android:background="@android:color/transparent"
             android:text="@string/user_agreement"
             android:textAlignment="textStart"
             android:textAllCaps="false"
