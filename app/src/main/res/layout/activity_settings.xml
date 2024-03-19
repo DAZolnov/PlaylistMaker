@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="ExtraText"
+        android:paddingTop="4dp">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            app:icon="@drawable/arrow_back"
+            app:iconTint="@color/black"
+            app:cornerRadius="@dimen/zero"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="52dp"
+            android:text="@string/settings"
+            android:layout_gravity="start"
+            android:textColor="@color/black"
+            android:textSize="@dimen/primary_text_size"
+            android:paddingTop="10dp"
+            android:paddingStart="12dp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:orientation="vertical"
+        android:layout_weight="1"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:paddingStart="16dp"
+            android:textSize="@dimen/settings_text_size"
+            android:id="@+id/switcher"
+            android:text="@string/dark_theme" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:backgroundTint="@color/white"
+            android:paddingStart="16dp"
+            android:text="@string/share"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_text_size"
+            android:textStyle="normal"
+            app:icon="@drawable/share"
+            app:iconGravity="end"
+            app:iconTint="@color/settings_icon" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:paddingStart="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/support"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_text_size"
+            android:textStyle="normal"
+            app:icon="@drawable/support"
+            app:iconGravity="end"
+            app:iconTint="@color/settings_icon" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:paddingStart="16dp"
+            android:backgroundTint="@color/white"
+            android:text="@string/user_agreement"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/settings_text_size"
+            android:textStyle="normal"
+            app:icon="@drawable/arrow_forward"
+            app:iconGravity="end"
+            app:iconTint="@color/settings_icon" />
+
+    </LinearLayout>
+</LinearLayout>
