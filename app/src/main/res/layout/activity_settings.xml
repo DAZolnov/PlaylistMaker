@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/settings">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_56dp"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_4dp"
+        tools:ignore="ExtraText">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back"
+            style="@style/settings_arrow_back"
+            app:icon="@drawable/arrow_back" />
+
+        <TextView
+            style="@style/settings_header"
+            android:text="@string/settings" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="UseSwitchCompatOrMaterialXml">
+
+
+        <Switch
+            android:id="@+id/switcher"
+            style="@style/settings_switch"
+            android:text="@string/dark_theme" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/share"
+            style="@style/settings_button"
+            android:text="@string/share"
+            app:icon="@drawable/share" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/write_to_support"
+            style="@style/settings_button"
+            android:text="@string/support"
+            app:icon="@drawable/support" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/terms_of_use"
+            style="@style/settings_button"
+            android:text="@string/user_agreement"
+            app:icon="@drawable/arrow_forward" />
+
+    </LinearLayout>
+</LinearLayout>
