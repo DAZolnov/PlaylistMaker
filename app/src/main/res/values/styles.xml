@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="main">
         <item name="android:background">@color/main_background</item>
         <item name="android:layout_width">match_parent</item>
@@ -38,7 +39,7 @@
         <item name="android:paddingStart">@dimen/_12dp</item>
     </style>
 
-    <style name="main_button">
+    <style name="main_button" parent="Widget.MaterialComponents.Button.UnelevatedButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/zero</item>
         <item name="android:layout_weight">1</item>
@@ -68,7 +69,7 @@
         <item name="iconGravity">end</item>
         <item name="iconTint">@color/settings_icon</item>
     </style>
-    
+
     <style name="settings_switch">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/settings_button_height</item>

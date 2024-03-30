@@ -33,29 +33,24 @@ class SettingsActivity : ComponentActivity() {
         }
 
         support.setOnClickListener {
-            //val recipient = getString(R.string.email_to_support_recipient)
             val recipient = arrayOf(resources.getString(R.string.email_to_support_recipient))
             val theme = getString(R.string.email_to_support_theme)
             val body = getString(R.string.email_to_support_body)
 
-              val supportIntent = Intent(Intent.ACTION_SENDTO).apply {
-                  data = Uri.parse("mailto:")
-                  putExtra(Intent.EXTRA_EMAIL, recipient)
-                  putExtra(Intent.EXTRA_SUBJECT, theme)
-                  putExtra(Intent.EXTRA_TEXT, body)
-              }
-              if (supportIntent.resolveActivity(packageManager) != null) {
-                  startActivity(supportIntent)
-              }
+            val supportIntent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("mailto:")
+                putExtra(Intent.EXTRA_EMAIL, recipient)
+                putExtra(Intent.EXTRA_SUBJECT, theme)
+                putExtra(Intent.EXTRA_TEXT, body)
+            }
+            startActivity(supportIntent)
         }
 
         terms.setOnClickListener {
             val url = getString(R.string.terms_of_use)
             val webpage: Uri = Uri.parse(url)
             val termsIntent = Intent(Intent.ACTION_VIEW, webpage)
-            if (termsIntent.resolveActivity(packageManager) != null) {
-                startActivity(termsIntent)
-            }
+            startActivity(termsIntent)
         }
 
     }

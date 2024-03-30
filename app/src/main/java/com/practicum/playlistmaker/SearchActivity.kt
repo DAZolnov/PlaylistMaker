@@ -19,7 +19,7 @@ class SearchActivity : ComponentActivity() {
     private lateinit var inputEditText: EditText
 
     companion object {
-        const val SEARCH_TEXT = "SEARCH_TEXT"
+        private const val SEARCH_TEXT = "SEARCH_TEXT"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +44,7 @@ class SearchActivity : ComponentActivity() {
 
         val simpleTextWatcher = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-                // empty
+
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
@@ -53,7 +53,7 @@ class SearchActivity : ComponentActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                // empty
+
             }
         }
         inputEditText.addTextChangedListener(simpleTextWatcher)
