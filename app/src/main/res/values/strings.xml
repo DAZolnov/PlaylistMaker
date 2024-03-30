@@ -9,5 +9,11 @@
     <string name="user_agreement">Пользовательское соглашение</string>
     <string name="title_activity_media_library">MediaLibraryActivity</string>
     <string name="title_activity_search">SearchActivity</string>
+    <string name="share_internal_message">Курс andorid-разработчик на Яндекс.Практикум: https://practicum.yandex.ru/android-developer/</string>
+    <string name="email_to_support_recipient">w-im-ff@yandex.ru</string>
+    <string name="email_to_support_theme">Сообщение разработчикам и разработчицам приложения Playlist Maker</string>
+    <string name="email_to_support_body">Спасибо разработчикам и разработчицам за крутое приложение!</string>
+    <string name="terms_of_use">https://yandex.ru/legal/practicum_offer/</string>
+    <string name="input_hint">https://yandex.ru/legal/practicum_offer/</string>
 
 </resources>

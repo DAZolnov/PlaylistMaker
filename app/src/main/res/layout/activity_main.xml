@@ -2,11 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/main_background"
-    android:padding="@dimen/_4dp"
+    style="@style/main"
     tools:context=".MainActivity">
 
     <FrameLayout
@@ -17,72 +13,43 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
             android:layout_gravity="start"
-            android:textColor="@color/white"
-            android:textSize="@dimen/primary_text_size"
             android:padding="@dimen/_12dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            android:text="@string/app_name"
+            android:textAppearance="@font/ys_display_medium"
+            android:textColor="@color/white"
+            android:textFontWeight="500"
+            android:textSize="@dimen/primary_text_size" />
 
     </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_24dp"
         android:layout_marginStart="@dimen/_16dp"
-        android:layout_marginBottom="@dimen/_28dp"
+        android:layout_marginTop="@dimen/_24dp"
         android:layout_marginEnd="@dimen/_16dp"
-        android:orientation="vertical"
-        android:layout_weight="1">
+        android:layout_marginBottom="@dimen/_28dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/search"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            style="@style/main_button"
             android:text="@string/search"
-            android:textColor="@color/black"
-            android:textSize="@dimen/primary_text_size"
-            app:cornerRadius="@dimen/_16dp"
-            app:icon="@drawable/search"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/_8dp"
-            app:iconTint="@color/black"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            app:icon="@drawable/search" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/media_library"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            style="@style/main_button"
             android:text="@string/media_library"
-            android:textSize="@dimen/primary_text_size"
-            android:textColor="@color/black"
-            app:icon="@drawable/media_library"
-            app:iconTint="@color/black"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/_8dp"
-            app:cornerRadius="@dimen/_16dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            app:icon="@drawable/media_library" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/settings"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/zero"
-            android:layout_weight="1"
-            android:backgroundTint="@color/white"
+            style="@style/main_button"
             android:text="@string/settings"
-            android:textColor="@color/black"
-            android:textSize="@dimen/primary_text_size"
-            app:cornerRadius="@dimen/_16dp"
-            app:icon="@drawable/settings"
-            app:iconGravity="textStart"
-            app:iconPadding="@dimen/_8dp"
-            app:iconTint="@color/black"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+            app:icon="@drawable/settings" />
 
     </LinearLayout>
 
